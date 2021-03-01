@@ -38,7 +38,7 @@ The task's focus points:
 * Change to the directory/folder where you want to clone the repository.
 * To clone the repository, type `git clone` followed by the URL. 
 
-  `$ git clone https://github.com/AlexaIsaks/Recreate-Netflix.git`
+  `$ git clone https://github.com/AlexaIsaks/Book-Review.git`
 
 * Press **Enter**. The repository will be cloned in your folder.
 
@@ -57,4 +57,5 @@ The task's focus points:
 Certified Full Stack Web and Software Engineer 
 
 Webpage design inspired by:
+
 [BookPage](https://bookpage.com/reviews)
