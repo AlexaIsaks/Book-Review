@@ -1,0 +1,57 @@
+//Footer block/component
+.footer {
+    @include dflex-center;
+    padding: 5rem 1rem;
+    
+    background-color: $bg-secondary;
+    color: $text-secondary;
+}
+
+.footer__container {
+    @include dflex(column, wrap, center, center);
+}
+
+.footer__logo {
+    margin-bottom: 2rem;
+}
+
+.footer__title {
+    margin-bottom: 1rem;
+    width: 100%;
+
+    text-align: center;
+    font-weight: 400;
+}
+
+//Footer navigation
+.footer__nav {
+    @include dflex(row, wrap, center, center);
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+.footer__item {
+    margin: 0 0.25rem;
+    list-style: none;
+}
+
+.footer__link {
+    font-size: 0.9375rem;
+    font-family: $font-secondary;
+    color: $text-secondary;
+}
+
+//Footer social media links
+.footer__social-icon-container {
+    @include dflex(row, wrap, space-between, center);
+    margin-bottom: 1.5rem;    
+}
+
+.footer__social-link {
+    margin: 0 0.28rem;
+    color: $text-secondary;
+}
+
+.footer__text {
+    font-size: 0.7rem;
+}

@@ -1,0 +1,21 @@
+//Input block/component
+.input {
+    padding: 0.5rem 0;
+    width: 100%;
+
+    background-color: $bg-primary;
+    border: none;
+    border-bottom: 1px solid $b-primary;
+    font-size: 1rem;
+    color: $text-primary;
+    outline: none;
+}
+
+
+.input--textarea {
+    min-height: 10rem;
+    resize: vertical;
+    overflow: hidden;
+
+    font-size: 1.2rem;
+}

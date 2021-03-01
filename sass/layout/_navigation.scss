@@ -1,0 +1,40 @@
+//Main navigation block/componet of the page
+.nav {
+    width: 100%;
+
+    @include media-query("l") {
+        width: auto;
+    }
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    @include dflex(column, wrap, center, flex-start);
+
+    @include media-query("l") {
+        flex-direction: row;
+        padding: 0;
+    }
+}
+
+.nav__item {
+    margin-bottom: 1.2rem;
+    list-style: none;
+
+    @include media-query("l") {
+        margin: 0 1rem;
+    }
+}
+
+.nav__link {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: $font-secondary;
+    color: $text-primary;
+
+    @include media-query("l") {
+        font-size: 1rem;
+    }
+}

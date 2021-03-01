@@ -1,0 +1,119 @@
+//Main block/componet 
+//My review page specfic layout and style
+.main-review {
+    @include dflex(column, wrap, center, center);
+    padding: 7rem 1rem 1rem;
+
+    @include media-query("l") {
+     @include dflex(row, wrap, center, flex-start);
+    }
+}
+
+.main-review__aside {
+    @include dflex-center;
+    padding: 1.5rem 0;
+    margin-bottom: 1rem;
+    width: 100%;
+
+    border: 3px solid $b-green;
+    border-radius: 2px;
+
+    @include media-query("l") {
+        margin: 0 1rem 0 0;
+        width: 25%;
+    }
+}
+
+.main-review__content {
+    padding: 1rem;
+    min-height: 80vh;
+    width: 100%;
+
+    border: 1px solid $b-primary;
+    border-radius: 2px;
+
+    @include media-query("l") {
+        width: 70%;
+    }
+}
+
+.main-review__heading {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: $font-secondary;
+}
+
+.main-review__book-container {
+    min-height: 80vh;
+}
+
+.main-review__subheading {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: $font-secondary;
+}
+
+//Book review section block/component
+//For each book review created
+.book {
+    padding: 1rem 0;
+    border-bottom: 1px solid $b-secondary;
+}
+
+.book__title {
+    margin-bottom: 1rem;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.book__author {
+   margin-bottom: 0.5rem;
+
+   font-size: 0.95rem;
+   font-weight: 600;
+   font-family: $font-secondary;
+}
+
+.book__genre {
+    margin-bottom: 0.5rem;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: $font-secondary;
+}
+
+.book__rating {
+    margin-bottom: 0.5rem;
+
+    font-size: 0.85rem;
+    font-family: $font-secondary;
+}
+
+.book__text {
+    margin-bottom: 0.5rem;
+
+    font-size: 0.9375rem;
+    line-height: 1.5;
+}
+
+.book__buttons-container {
+    margin-top: 1rem;
+}
+
+.book__button-edit {
+    margin-right: 1rem;
+}
+
+//Read more / read less toggle
+//To read and hide the review 
+.display-review {
+    display: block;
+}
+
+.hide-review {
+    display: none;
+}

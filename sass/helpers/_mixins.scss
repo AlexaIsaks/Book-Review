@@ -1,0 +1,33 @@
+//Media queries and breakpoints
+//Breakpoint reference: https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp
+$breakpoints: (
+    "xs": "max-width: 600px",                  //Extra small devices: phones
+    "s": "min-width: 600px",                   //Small devices: portrait tablets, large phones
+    "m": "min-width: 768px",                   //Medium devices: landscape tablets
+    "l": "min-width: 992px",                   //Large devices: desktops, laptops
+    "xl": "min-width: 1200px"                  //Extra large devices: large laptops, desktops
+);
+
+@mixin media-query($breakpoint) {
+    @media only screen and (map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+
+//Center blocks, elements
+@mixin dflex-center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+//Flexbox layout
+@mixin dflex($direction, $wrap, $justify-content, $align-items) {
+    display: flex;
+    flex-flow: $direction $wrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

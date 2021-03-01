@@ -1,0 +1,29 @@
+//Project follows SASS 7-1 pattern architecture and BEM methodology
+
+//Base
+@import "base/reset";
+
+//Helpers
+@import "helpers/variables";
+@import "helpers/typography";
+@import "helpers/mixins";
+
+//Layout
+//Layout of specific areas (macro components) i.e. header, footer, navigation etc.
+@import "layout/body";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/modalBox";
+@import "layout/form";
+@import "layout/footer";
+
+//Pages
+//Page specific layouts and styles
+@import "pages/myReview";
+
+//Components 
+//Small reusable components
+@import "components/logo";
+@import "components/hamburger";
+@import "components/buttons";
+@import "components/input";

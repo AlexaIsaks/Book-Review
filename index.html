@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <!--Font awesome icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="sass/main.css" type="text/css">
+    <title>Book Review</title>
+</head>
+
+<body class="body">
+    <!--Page header-->
+    <header class="header">
+        <div class="header__icon-container">
+            <div class="logo logo--header">BookMark</div>
+            <!--Mobile hamburger/menu icon-->
+            <div class="hamburger">
+                <span class="hamburger__bar"></span>
+                <span class="hamburger__bar hamburger__bar-middle"></span>
+                <span class="hamburger__bar"></span>
+            </div>
+        </div>
+
+        <div class="header__nav-form-container">
+            <!--Page header navigation-->
+            <nav class="nav header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">MyBook</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Browse</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Community</a></li>
+                </ul>
+            </nav>
+            <form>
+                <input type="search" placeholder="Search" class="input">
+            </form>
+        </div>
+    </header>
+    <!--Main page section-->
+    <main class="main-review">
+        <!--"Write a review" aside/section-->
+        <aside class="main-review__aside">
+            <button id="write-review" class="button button--border">Write a Review</button>
+            <!--Pop up modal for review form-->
+            <div id="modal-review-form" class="modal hide-review-form">
+                <div class="modal__container">
+                    <span class="modal__close">&Cross;</span>
+                    <!--Review form and editor form (for existing review)-->
+                    <form id="review-form" class="form">
+                        <input type="text" name="title" placeholder="Book Title" id="review-title"
+                            class="input form__input">
+                        <input type="text" name="author" placeholder="Author" id="review-author"
+                            class="input form__input">
+                        <input type="text" name="genre" placeholder="Genre" id="review-genre" class="input form__input">
+                        <input type="number" name="rating" min="0" max="10" step="0.5" placeholder="Rating"
+                            id="review-rating" class="input form__input">
+                        <textarea name="review" placeholder="Write Review" id="review-review"
+                            class="input input--textarea form__input"></textarea>
+                        <input type="submit" name="submit" id="submit-review" class="button button--border">
+                    </form>
+                </div>
+            </div>
+        </aside>
+
+        <div class="main-review__content">
+            <header>
+                <h1 class="main-review__heading">My Reviews</h1>
+            </header>
+            <div class="main-review__book-container">
+                <h2 class="main-review__subheading">No Reviews</h2>
+
+                <!--Book review listing section: Reviews will be added here-->
+
+            </div>
+        </div>
+    </main>
+    <!--Page footer-->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="logo logo--footer footer__logo">BookMark</div>
+            <h3 class="footer__title">Company</h3>
+
+            <!--Page footer navigation-->
+            <ul class="footer__nav">
+                <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">&#8226; Advertise</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">&#8226; Contact Us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">&#8226; Privacy Policy</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">&#8226; Submission Guidelines</a></li>
+            </ul>
+
+            <!--Social media links-->
+            <div class="footer__social-icon-container">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                    class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                    class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer__social-link"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                    class="footer__social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="footer__text">2020 BookMark</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

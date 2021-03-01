@@ -1,0 +1,15 @@
+//Website logo block/component
+.logo {
+    padding: 0.4rem 0;
+    font-family: $font-primary;
+}
+
+.logo--header {
+    font-size: 2rem;
+    color: $text-primary;
+}
+
+.logo--footer {
+    font-size: 1.5rem;
+    color: $text-tertiary;
+}
