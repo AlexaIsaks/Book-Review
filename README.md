@@ -56,6 +56,6 @@ The task's focus points:
 
 Certified Full Stack Web and Software Engineer 
 
-Webpage design inspired by:
+**Webpage design inspired by:**
 
 [BookPage](https://bookpage.com/reviews)
