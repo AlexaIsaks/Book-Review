@@ -50,6 +50,12 @@ The task's focus points:
 
 * The webpage should look like this:
 
+<p align="center"><img alt="bookmark page" src="./readme-images/bookmark-1.jpg" width="600"></p>
+
+<p align="center"><img alt="book review form" src="./readme-images/bookmark-2.jpg" width="600"></p>
+
+<p align="center"><img alt="book review" src="./readme-images/bookmark-3.jpg" width="600"></p>
+
 ## Acknowledgments
 
 **HyperionDev**
