@@ -50,11 +50,13 @@ The task's focus points:
 
 * The webpage should look like this:
 
-<p align="center"><img alt="bookmark page" src="./readme-images/bookmark-1.jpg" width="600"></p>
+<p align="center"><img alt="Home page desktop" src="./readme-images/home-page-desktop.png" width="600"></p>
 
-<p align="center"><img alt="book review form" src="./readme-images/bookmark-2.jpg" width="600"></p>
+<p align="center"><img alt="Form desktop" src="./readme-images/form-desktop.png" width="600"></p>
 
-<p align="center"><img alt="book review" src="./readme-images/bookmark-3.jpg" width="600"></p>
+<p align="center"><img alt="Home page mobile" src="./readme-images/home-page-mobile.png" width="200"></p>
+
+<p align="center"><img alt="Form mobile" src="./readme-images/form-mobile.png" width="200"></p>
 
 ## Acknowledgments
 
